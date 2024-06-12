@@ -126,7 +126,7 @@ SELECT
     MIN(price) AS low,
     LAST(price, time) AS "close",
     LAST(day_volume, time) AS day_volume
-FROM crypto_ticks
+FROM stocks_real_time
 GROUP BY bucket, symbol;
 ```
 
